@@ -23,15 +23,12 @@ function DirectorQuotes({ content }) {
       </Row>
       <Row>
         {content.map(({ authorInfo, quote, yearWritten }) => (
-          <Col md="6" key={authorInfo.name}>
+          <Col md="3" key={authorInfo.name}>
             <Card className="card border-0">
-              <div className="text-center mb-2">
-                <img
-                  className="rounded-circle img-fluid director-icon"
-                  src={authorInfo.image.url}
-                  id="co-director"
-                  alt={authorInfo}
-                />
+              <div className="text-center">
+                <a href={authorInfo.linkedIn} target="_blank" rel="noreferrer">
+                  <img src={authorInfo.image.url} alt={authorInfo.name} className="rounded-circle img-fluid team-icon" />
+                </a>
               </div>
               <CardBody className="card-body">
                 <blockquote className="blockquote text-center mb-0">
@@ -40,7 +37,7 @@ function DirectorQuotes({ content }) {
                     {authorInfo.name}
                     <cite title="Source Title"> {yearWritten} </cite>
                     {authorInfo.linkedIn !== undefined && (
-                      <a href={authorInfo.linkedIn}>
+                      <a href={authorInfo.linkedIn} target="_blank">
                         {' '}
                         |{' '}
                         <img
@@ -60,6 +57,15 @@ function DirectorQuotes({ content }) {
         <style jsx>{`
           .director-icon {
             max-height: 240px;
+          }
+          .team-icon {
+            width: 80%;
+          }
+          .linkedin-icon {
+            margin-bottom: 3px;
+          }
+          .team-icon:hover {
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           }
         `}</style>
       </Row>

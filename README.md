@@ -26,7 +26,7 @@ If you're unfamiliar with connecting NextJS and Contentful using GraphQL, read t
 
 To use Contentful in your project, you'll need to set some keys to talk to our Hack4Impact space.
 
-Note that **we recommend using our existing Hack4Impact Contentful space.** Please contact us over slack or at contact@hack4impact.org for these credentials.
+Note that **we recommend using our existing Hack4Impact Contentful space.** Please contact us over slack or at bostonuniversity@hack4impact.org for these credentials.
 
 Once you have them, create a `.env` file in the base folder of this repo, and paste these contents:
 

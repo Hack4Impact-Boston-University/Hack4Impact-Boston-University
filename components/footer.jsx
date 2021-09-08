@@ -66,12 +66,15 @@ function Footer() {
               <li>
                 <a target="_blank" href="https://github.com/orgs/Hack4Impact-Boston-University/repositories">Github</a>
               </li>
-              {/* <li>
-                <a target="_blank" href="https://medium.com/hack4impact">Blog</a>
-              </li> */}
               <li>
-                <a target="_blank" href="mailto:bostonuniversity@hack4impact.org">Email</a>
+                <a target="_blank" href="https://www.instagram.com/hack4impactbu/">Instagram</a>
               </li>
+              {/* <li>
+                  <a target="_blank" href="https://medium.com/hack4impact">Blog</a>
+                </li> */}
+              {/*<li>
+                    <a target="_blank" href="mailto:bostonuniversity@hack4impact.org">Email</a>
+                  </li>*/}
             </ul>
           </div>
         </Row>

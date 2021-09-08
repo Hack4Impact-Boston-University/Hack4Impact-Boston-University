@@ -181,15 +181,15 @@ function ProjectTechUsed({ technologiesUsed }) {
           {technologiesUsed.map((tech) => (
             <Col md="2" xs="6" key={tech}>
               <Card className="border-0">
-                <a href={icons[tech].link}>
+                <a href={icons[tech]?.link}>
                   <img
-                    src={icons[tech].imgPath}
+                    src={icons[tech]?.imgPath}
                     className="img-thumbnail img-fluid tech-stack-img"
-                    alt={icons[tech].title}
+                    alt={icons[tech]?.title}
                   />
                 </a>
-                <a href={icons[tech].link} className="text-center tech-stack-link">
-                  {icons[tech].title}
+                <a href={icons[tech]?.link} className="text-center tech-stack-link">
+                  {icons[tech]?.title}
                 </a>
               </Card>
             </Col>

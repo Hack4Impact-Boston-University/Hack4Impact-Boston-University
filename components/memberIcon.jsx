@@ -3,8 +3,8 @@ import { Col, Card } from 'reactstrap';
 
 const TeamMemberIcon = ({ name, title, image, linkedIn }) => {
   return (
-    title == "External Director" || title == "Community Director" || title == "External Chairman" ?
-    <Col xs={image?.url ? '6' : '6'} md="4">
+    ["External Director", "Community Director", "External Chairman"].includes(title) ?
+    <Col xs={image?.url ? '6' : '6'} md="3">
       <Card className="border-0 member-icon">
         <div className="text-center">
           <a href={linkedIn} target="_blank" rel="noreferrer">

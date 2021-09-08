@@ -21,6 +21,7 @@ function DirectorQuotes({ content }) {
           </Col>
         </div>
       </Row>
+
       <Row>
         {content.map(({ authorInfo, quote, yearWritten }) => (
           <Col md="3" key={authorInfo.name}>

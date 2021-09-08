@@ -45,7 +45,7 @@ function FeatureSlider({ features }) {
                     onClick={() => setCurrFeatureHeader(header)}>
                     <div className="pl-3">
                       <h3 className="feature-title">{header}</h3>
-                      <ContentBlock content={body.json} />
+                      <ContentBlock content={body?.json} />
                     </div>
                   </button>
                 </Row>

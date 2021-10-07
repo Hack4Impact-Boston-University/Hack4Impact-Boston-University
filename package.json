@@ -9,7 +9,9 @@
         "format": "prettier --write \"**/*.{js,jsx,css}\"",
         "format:check": "prettier --check \"**/*.{js,jsx,css}\"",
         "lint": "eslint \"./**/*.{js,jsx}\"",
-        "lint:fix": "eslint --fix \"./**/*.{js,jsx}\""
+        "lint:fix": "eslint --fix \"./**/*.{js,jsx}\"",
+        "heroku-prebuild": "npm install -f",
+        "heroku-postbuild": "npm run prod"
     },
     "dependencies": {
         "next": "^10.0.4",
@@ -21,6 +23,7 @@
         "react-toastify": "^6.0.8",
         "react-vertical-timeline-component": "^3.0.2",
         "reactstrap": "^8.5.1",
+        "serve": "^12.0.1",
         "yarn": "^1.16.0"
     },
     "devDependencies": {

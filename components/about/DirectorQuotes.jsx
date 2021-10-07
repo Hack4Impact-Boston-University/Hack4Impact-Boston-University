@@ -16,7 +16,7 @@ function DirectorQuotes({ content }) {
         <div className="mb-3 text-center">
           <Col md="12">
             <h4 className="text-title">
-              <em> Message from our Directors </em>
+              <em> Directors </em>
             </h4>
           </Col>
         </div>

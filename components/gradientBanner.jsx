@@ -21,7 +21,7 @@ const GradientBanner = ({ title, subHeadline, style, arrow, children }) => (
             </Spring>
           </Col>
           {subHeadline && (
-            <Row>
+            <Row style={{alignContent:'center', width:'100%'}}>
               <Spring
                 config={{ delay: 500 }}
                 from={{ opacity: 0, transform: 'translate3d(-100px,0,0)' }}

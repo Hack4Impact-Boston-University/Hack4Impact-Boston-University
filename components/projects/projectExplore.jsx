@@ -23,9 +23,7 @@ const ProjectExplore = () => (
 
       <Row>
         <div className="text-center">
-          <ActionButton style={{ marginRight: '10px' }} link="/apply/students">
-            Students
-          </ActionButton>
+          <ActionButton style={{ marginRight: '10px' }} link="/apply/students">Students</ActionButton>
           <ActionButton link="/apply/nonprofits">Nonprofits</ActionButton>
         </div>
       </Row>

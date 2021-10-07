@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const InvolveSection = () => (
   <Row>
-    <Col md="5">
+    <Col md="5" style={{alignContent:'center'}}>
       <div className="involved-container">
         <h3 className="text-title text-center">Students</h3>
         <Link href="/apply/students">
@@ -33,7 +33,7 @@ const InvolveSection = () => (
         </div>
       </Row>
     </Col>
-    <Col md="5" className="offset-md-2">
+    {/* <Col md="5" className="offset-md-2">
       <div className="involved-container">
         <h3 className="text-title text-center">Nonprofits</h3>
         <Link href="/apply/nonprofits">
@@ -57,7 +57,7 @@ const InvolveSection = () => (
           </div>
         </Row>
       </div>
-    </Col>
+    </Col> */}
     <style jsx>{`
       img {
         display: block;

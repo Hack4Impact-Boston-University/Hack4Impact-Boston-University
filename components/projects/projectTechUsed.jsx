@@ -30,6 +30,11 @@ const icons = {
     title: 'DynamoDB',
     imgPath: '/images/techStack/dynamodb.png',
   },
+  Dart: {
+    link: 'https://dart.dev/',
+    title: 'Dart',
+    imgPath: '/images/techStack/dart.jpeg',
+  },
   Express: {
     link: 'https://expressjs.com',
     title: 'ExpressJS',
@@ -49,6 +54,11 @@ const icons = {
     link: 'http://flask.pocoo.org/',
     title: 'Flask',
     imgPath: '/images/techStack/flask.jpg',
+  },
+  Flutter: {
+    link: 'https://flutter.dev/',
+    title: 'Flutter',
+    imgPath: '/images/techStack/flutter.png',
   },
   Gensim: {
     link: 'https://radimrehurek.com/gensim/',
@@ -164,6 +174,16 @@ const icons = {
     link: 'https://spacy.io',
     title: 'Spacy',
     imgPath: '/images/techStack/spacy.jpg',
+  },
+  Swift: {
+    link: 'https://www.swift.com/',
+    title: 'Swift',
+    imgPath: 'https://cdn4.iconfinder.com/data/icons/logos-3/504/Swift-2-512.png',
+  },
+  Vue: {
+    link: 'https://vuejs.org/',
+    title: 'Vue',
+    imgPath: 'https://miro.medium.com/max/450/1*fftNjGV6MH-zlshq3m19Xg.png',
   },
   yargs: {
     link: 'http://yargs.js.org',

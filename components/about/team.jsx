@@ -12,15 +12,13 @@ function Team({ directorQuotes, members, alumni }) {
       
         {/* E-Board Section */}
         <Row>
-          <Row>
-            <div className="text-center" >
-              <Col md="12">
-                <h4 className="text-title text-center">
-                  <em> E-Board Members </em>
-                </h4>
-              </Col>
-            </div>
-          </Row>
+          <div className="text-center" >
+            <Col md="12">
+              <h4 className="text-title text-center">
+                <em> E-Board </em>
+              </h4>
+            </Col>
+          </div>
 
           <Row>
           {members.map((member) => (
@@ -37,16 +35,14 @@ function Team({ directorQuotes, members, alumni }) {
         </Row>
 
         {/* Tech Lead/JDT Leads Section */}
-        <Row>
-          <Row>
-            <div className="text-center" style={{ alignContent: 'center'}} >
-              <Col md="12">
-                <h4 className="text-title text-center">
-                  <em> Team Lead </em>
-                </h4>
-              </Col>
-            </div>
-          </Row>
+        <Row style={{paddingTop: '50px'}}>
+          <div className="text-center" style={{ alignContent: 'center'}} >
+            <Col md="12">
+              <h4 className="text-title text-center">
+                <em> Team Lead </em>
+              </h4>
+            </Col>
+          </div>
           
           <Row>
           {members.map((member) => (
@@ -63,16 +59,14 @@ function Team({ directorQuotes, members, alumni }) {
         </Row>
 
         {/* Software Engineer Section */}
-        <Row>
-          <Row>
-            <div className="text-center" style={{ alignContent: 'center'}} >
-              <Col md="12">
-                <h4 className="text-title text-center">
-                  <em> Software Engineer </em>
-                </h4>
-              </Col>
-            </div>
-          </Row>
+        <Row style={{paddingTop: '50px'}}>
+          <div className="text-center" style={{ alignContent: 'center'}} >
+            <Col md="12">
+              <h4 className="text-title text-center">
+                <em> Software Engineer </em>
+              </h4>
+            </Col>
+          </div>
           
           <Row>
           {members.map((member) => (
@@ -89,16 +83,14 @@ function Team({ directorQuotes, members, alumni }) {
         </Row>
 
         {/* Junior Developers Section */}
-        <Row>
-          <Row>
-            <div className="text-center" style={{ alignContent: 'center'}} >
-              <Col md="12">
-                <h4 className="text-title text-center">
-                  <em> Junior Developer </em>
-                </h4>
-              </Col>
-            </div>
-          </Row>
+        <Row style={{paddingTop: '50px'}}>
+          <div className="text-center" style={{ alignContent: 'center'}} >
+            <Col md="12">
+              <h4 className="text-title text-center">
+                <em> Junior Developer </em>
+              </h4>
+            </Col>
+          </div>
           
           <Row>
           {members.map((member) => (
@@ -114,9 +106,17 @@ function Team({ directorQuotes, members, alumni }) {
           </Row>
         </Row>
 
-
-        <h2 className="p-5 m-3 center"> Alumni </h2>
-        <Row>
+        {/* Alumni Section */}
+        <Row style={{paddingTop: '50px'}}>
+          <div className="text-center" style={{ alignContent: 'center'}} >
+            <Col md="12">
+              <h4 className="text-title text-center">
+                <em> Alumni </em>
+              </h4>
+            </Col>
+          </div>
+          
+          <Row>
           {alumni.map((member) => (
             <MemberIcon
               key={member.name}
@@ -126,6 +126,7 @@ function Team({ directorQuotes, members, alumni }) {
               linkedIn={member.linkedIn}
             />
           ))}
+          </Row>
         </Row>
       </Container>
     </Section>

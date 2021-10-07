@@ -3,7 +3,7 @@ import { Card, CardBody } from 'reactstrap';
 import ActionButton from '../actionButton';
 import ContentBlock from '../ContentBlock';
 
-function ProjectCard({ title, thumbnail, urlSlug, description }) {
+function ProjectCard({ title, thumbnail, urlSlug, description, completedIn }) {
   return (
     <>
       <Card className="bg-light mb-3 project-card h-100" style={{ height: '100%' }}>
@@ -13,6 +13,7 @@ function ProjectCard({ title, thumbnail, urlSlug, description }) {
           <div className="text-center">
             <ContentBlock content={description.json} />
           </div>
+          <h6 className="text-center" style={{color:'purple'}}>{completedIn}</h6>
           <div className="text-center action-btn-box">
             <ActionButton white link={`/projects/${urlSlug}`}>
               Learn more

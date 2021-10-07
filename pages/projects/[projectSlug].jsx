@@ -70,7 +70,7 @@ function ProjectPage({
           />
         );
       })}
-      <Team members={teamMembersCollection.items} />
+      // <Team members={teamMembersCollection.items} />
       <Row className="d-flex justify-content-center mb-5">
         <ActionButton white link="/projects">
           See more of our projects

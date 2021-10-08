@@ -2,7 +2,7 @@
     "name": "hack4impact-chapter-website-template",
     "author": "Hack4Impact",
     "scripts": {
-        "dev": "next",
+        "dev": "next dev",
         "build": "next build",
         "start": "next start -p $PORT",
         "heroku-postbuild": "npm run build",
@@ -32,7 +32,5 @@
         "prettier": "^2.1.2",
         "styled-jsx-plugin-sass": "^1.0.0"
     },
-    "engines": {
-        "node": "14.17.1"
-    }
+    "cacheDirectories": [".next/cache"]
 }

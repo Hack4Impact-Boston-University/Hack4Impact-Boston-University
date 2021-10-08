@@ -4,14 +4,9 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
-        "start": "node index.js",
-        "export": "next build && next export",
-        "format": "prettier --write \"**/*.{js,jsx,css}\"",
-        "format:check": "prettier --check \"**/*.{js,jsx,css}\"",
-        "lint": "eslint \"./**/*.{js,jsx}\"",
-        "lint:fix": "eslint --fix \"./**/*.{js,jsx}\"",
-        "heroku-prebuild": "npm install -f",
-        "heroku-postbuild": "npm run prod"
+        "start": "next start -p $PORT",
+        "heroku-postbuild": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
         "next": "^10.0.4",

@@ -32,12 +32,19 @@ const MissionSection = () => (
           {(props) => (
             <div className="text-center img-holder">
               <img
+                alt="BU team"
+                style={props}
+                src="/images/bu_group_photo.jpg"
+                className="shadow"
+                id="mission-team"
+              />
+              {/* <img
                 alt="Fall 2019 team"
                 style={props}
                 src="/images/fa19-team.jpg"
                 className="shadow"
                 id="mission-team"
-              />
+              /> */}
             </div>
           )}
         </Spring>

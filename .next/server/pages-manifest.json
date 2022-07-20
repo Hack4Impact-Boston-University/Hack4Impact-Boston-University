@@ -1,5 +1,13 @@
 {
   "/_app": "pages/_app.js",
+  "/about": "pages/about.js",
+  "/apply": "pages/apply.html",
+  "/apply/nonprofits": "pages/apply/nonprofits.js",
+  "/apply/students": "pages/apply/students.js",
+  "/": "pages/index.js",
+  "/projects/[projectSlug]": "pages/projects/[projectSlug].js",
+  "/projects": "pages/projects.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }

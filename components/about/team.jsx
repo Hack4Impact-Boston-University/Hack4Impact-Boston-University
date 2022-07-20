@@ -83,28 +83,30 @@ function Team({ directorQuotes, members, alumni }) {
         </Row>
 
         {/* Junior Developers Section */}
-        <Row style={{paddingTop: '50px'}}>
-          <div className="text-center" style={{ alignContent: 'center'}} >
-            <Col md="12">
-              <h4 className="text-title text-center">
-                <em> Junior Developer </em>
-              </h4>
-            </Col>
-          </div>
-          
-          <Row>
-          {members.map((member) => (
-            ["Junior Developer"].includes(member.title) ?
-            <MemberIcon
-              key={member.name}
-              name={member.name}
-              title={member.title}
-              image={member.image}
-              linkedIn={member.linkedIn}
-            /> : <div></div>
-          ))}
+        {/*
+          <Row style={{paddingTop: '50px'}}>
+            <div className="text-center" style={{ alignContent: 'center'}} >
+              <Col md="12">
+                <h4 className="text-title text-center">
+                  <em> Junior Developer </em>
+                </h4>
+              </Col>
+            </div>
+            
+            <Row>
+              {members.map((member) => (
+                ["Junior Developer"].includes(member.title) ?
+                <MemberIcon
+                  key={member.name}
+                  name={member.name}
+                  title={member.title}
+                  image={member.image}
+                  linkedIn={member.linkedIn}
+                /> : <div></div>
+              ))}
+            </Row>
           </Row>
-        </Row>
+        */}
 
         {/* Alumni Section */}
         <Row style={{paddingTop: '50px'}}>

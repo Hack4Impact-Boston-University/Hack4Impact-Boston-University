@@ -83,10 +83,17 @@ This will create a production-ready build of your site in the **`/out`** directo
 
 ## Deployment
 
-We recommend deploying your site using [Netlify](https://www.netlify.com). It offers a whole host of benefits, like a generous free tier, automatic redeploys whenever your `main` branch updates, integrations for contact forms (if you implement them), etc.
+Run `npm run build && npm run export` then push or merge your code into branch `prod`.
+
+or
+
+Run `npm run build && npm run export` and `firebase deploy`.
+
+
+<!-- We recommend deploying your site using [Netlify](https://www.netlify.com). It offers a whole host of benefits, like a generous free tier, automatic redeploys whenever your `main` branch updates, integrations for contact forms (if you implement them), etc.
 
 Hit the button at the top of this repo to try it out! Just don't forget to [set the environment variables](https://docs.netlify.com/configure-builds/environment-variables/) to the contents of your `.env`. Your build command will be `npm run export`.
 
 ### Redeploy on Contentful changes
 
-Netlify lets you set up "webhooks," which trigger redeploys on certain conditions. Just [read this guide](https://www.contentful.com/developers/docs/tutorials/general/automate-site-builds-with-webhooks/) to get set up! You should be able to use the webhook already configured in our Contentful space.
+Netlify lets you set up "webhooks," which trigger redeploys on certain conditions. Just [read this guide](https://www.contentful.com/developers/docs/tutorials/general/automate-site-builds-with-webhooks/) to get set up! You should be able to use the webhook already configured in our Contentful space. -->

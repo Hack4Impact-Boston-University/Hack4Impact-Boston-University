@@ -2,18 +2,15 @@
     "name": "hack4impact-chapter-website-template",
     "author": "Hack4Impact",
     "scripts": {
-        "dev": "next",
+        "dev": "next dev",
         "build": "next build",
-        "start": "next start",
-        "export": "next build && next export",
-        "format": "prettier --write \"**/*.{js,jsx,css}\"",
-        "format:check": "prettier --check \"**/*.{js,jsx,css}\"",
-        "lint": "eslint \"./**/*.{js,jsx}\"",
-        "lint:fix": "eslint --fix \"./**/*.{js,jsx}\"",
-        "heroku-prebuild": "npm install -f",
-        "heroku-postbuild": "npm run prod"
+        "export": "next export",
+        "start": "next start -p $PORT",
+        "heroku-postbuild": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
+        "n": "^9.0.0",
         "next": "^10.0.4",
         "next-page-transitions": "^1.0.0-alpha.4",
         "react": "^16.6.3",
@@ -24,6 +21,7 @@
         "react-vertical-timeline-component": "^3.0.2",
         "reactstrap": "^8.5.1",
         "serve": "^12.0.1",
+        "stable": "^0.1.8",
         "yarn": "^1.16.0"
     },
     "devDependencies": {
@@ -37,7 +35,7 @@
         "prettier": "^2.1.2",
         "styled-jsx-plugin-sass": "^1.0.0"
     },
-    "engines": {
-        "node": "14.17.1"
-    }
+    "cacheDirectories": [
+        ".next/cache"
+    ]
 }

@@ -83,14 +83,12 @@ This will create a production-ready build of your site in the **`/out`** directo
 
 ## Deployment
 
-Push or merge your code into branch `prod`.
+Run `npm run build && npm run export` then push or merge your code into branch `prod`.
 
-or run
+or
 
-```
-npm run build && npm run export
-firebase deploy
-```
+Run `npm run build && npm run export` and `firebase deploy`.
+
 
 <!-- We recommend deploying your site using [Netlify](https://www.netlify.com). It offers a whole host of benefits, like a generous free tier, automatic redeploys whenever your `main` branch updates, integrations for contact forms (if you implement them), etc.
 

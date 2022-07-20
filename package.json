@@ -3,7 +3,7 @@
     "author": "Hack4Impact",
     "scripts": {
         "dev": "next dev",
-        "build": "npm i && npm run build",
+        "build": "next build",
         "export": "next export",
         "start": "next start -p $PORT",
         "heroku-postbuild": "npm run build",
